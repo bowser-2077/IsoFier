@@ -18,8 +18,10 @@ From a folder:
 from isofier import create_iso
 
 create_iso("C:/Users/Me/Documents/MyFolder", "myfolder.iso")
-
+```
 From a list of files
+
+```python
 
 from isofier import create_iso
 
