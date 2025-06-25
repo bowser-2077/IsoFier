@@ -10,7 +10,8 @@ pip install isofier
 
 🚀 Usage
 
-Import the module and call create_iso():
+### Import the module and call create_iso():
+
 From a folder:
 ```python
 from isofier import create_iso
@@ -23,6 +24,52 @@ from isofier import create_iso
 
 create_iso(["file1.txt", "file2.png"], "archive.iso")
 ```
+📁 From specific files
+```python
+from isofier import create_iso
+
+files = [
+    "report.pdf",
+    "image.png",
+    "code/main.py"
+]
+
+create_iso(files, "archive.iso")
+```
+
+🔧 Function Reference
+
+```python
+create_iso(input: Union[str, List[str]], output: str) -> None
+```
+
+   - input: Either a path to a folder (str) or a list of file paths.
+
+   - output: Path to the output .iso file.
+
+If the input is a folder, all files and subfolders are recursively added to the ISO.
+
+
+💻 CLI (Optional)
+
+You can also use IsoFier in a Python script with command-line arguments:
+
+```python
+python create.py "C:/MyFolder" "output.iso"
+
+Example code for create.py:
+
+import sys
+from isofier import create_iso
+
+if len(sys.argv) != 3:
+    print("Usage: python create.py <input_path> <output_iso>")
+else:
+    create_iso(sys.argv[1], sys.argv[2])
+    print(" ISO created successfully!")
+```
+
+
 
 🧠 Features
 
