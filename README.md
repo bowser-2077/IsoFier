@@ -13,6 +13,7 @@ pip install isofier
 ### Import the module and call create_iso():
 
 From a folder:
+
 ```python
 from isofier import create_iso
 
@@ -25,6 +26,7 @@ from isofier import create_iso
 create_iso(["file1.txt", "file2.png"], "archive.iso")
 ```
 📁 From specific files
+
 ```python
 from isofier import create_iso
 
