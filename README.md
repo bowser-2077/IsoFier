@@ -8,7 +8,7 @@
 pip install isofier
 ```
 
-🚀 Usage
+## 🚀 Usage
 
 ### Import the module and call create_iso():
 
@@ -25,7 +25,7 @@ from isofier import create_iso
 
 create_iso(["file1.txt", "file2.png"], "archive.iso")
 ```
-📁 From specific files
+## 📁 From specific files
 
 ```python
 from isofier import create_iso
@@ -39,7 +39,7 @@ files = [
 create_iso(files, "archive.iso")
 ```
 
-🔧 Function Reference
+## 🔧 Function Reference
 
 ```python
 create_iso(input: Union[str, List[str]], output: str) -> None
@@ -52,7 +52,7 @@ create_iso(input: Union[str, List[str]], output: str) -> None
 If the input is a folder, all files and subfolders are recursively added to the ISO.
 
 
-💻 CLI (Optional)
+## 💻 CLI (Optional)
 
 You can also use IsoFier in a Python script with command-line arguments:
 
@@ -73,7 +73,7 @@ else:
 
 
 
-🧠 Features
+## 🧠 Features
 
    - Create ISO from a folder or specific files
 
@@ -81,7 +81,7 @@ else:
 
    - Pure Python, no external dependencies
 
-🛠️ Functions
+## 🛠️ Functions
 ```python
 create_iso(input, output)
 ```
@@ -90,13 +90,13 @@ create_iso(input, output)
 
    - output: string (output ISO file path)
 
-❗ Notes
+## ❗ Notes
 
    - On Windows, you must have permission to read all files/folders.
 
    - ISO creation uses temporary directory internally (auto-cleaned).
 
-🔧 Example CLI Integration
+## 🔧 Example CLI Integration
 
 ```python
 if __name__ == "__main__":
