@@ -49,7 +49,7 @@ create_iso(input, output)
 
 🔧 Example CLI Integration
 
-```
+```python
 if __name__ == "__main__":
     import sys
     from isofier import create_iso
